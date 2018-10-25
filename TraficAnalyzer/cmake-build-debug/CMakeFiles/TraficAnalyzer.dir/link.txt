@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/TraficAnalyzer.dir/main.cpp.o  -o TraficAnalyzer 
