@@ -50,7 +50,6 @@ int main() {
     printf("Starting...\n");
 
     int sock_raw = socket(AF_PACKET, SOCK_RAW, htons(ETH_P_ALL));
-    //setsockopt(sock_raw , SOL_SOCKET , SO_BINDTODEVICE , "eth0" , strlen("eth0")+ 1 );
 
     if (sock_raw < 0) {
         //Print the error with proper message
@@ -122,10 +121,7 @@ void print_ethernet_header(unsigned char *Buffer, int Size) {
 void print_ip_header(unsigned char *Buffer, int Size) {
     print_ethernet_header(Buffer, Size);
 
-    unsigned short iphdrlen;
-
     struct iphdr *iph = (struct iphdr *) (Buffer + sizeof(struct ethhdr));
-    iphdrlen = iph->ihl * 4;
 
     memset(&source, 0, sizeof(source));
     source.sin_addr.s_addr = iph->saddr;
@@ -173,8 +169,6 @@ void print_tcp_packet(unsigned char *Buffer, int Size) {
     fprintf(logfile, "   |-Acknowledge Number : %u\n", ntohl(tcph->ack_seq));
     fprintf(logfile, "   |-Header Length      : %d DWORDS or %d BYTES\n", (unsigned int) tcph->doff,
             (unsigned int) tcph->doff * 4);
-    //fprintf(logfile , "   |-CWR Flag : %d\n",(unsigned int)tcph->cwr);
-    //fprintf(logfile , "   |-ECN Flag : %d\n",(unsigned int)tcph->ece);
     fprintf(logfile, "   |-Urgent Flag          : %d\n", (unsigned int) tcph->urg);
     fprintf(logfile, "   |-Acknowledgement Flag : %d\n", (unsigned int) tcph->ack);
     fprintf(logfile, "   |-Push Flag            : %d\n", (unsigned int) tcph->psh);
