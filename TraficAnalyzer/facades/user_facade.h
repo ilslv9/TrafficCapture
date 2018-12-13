@@ -8,7 +8,7 @@ class user_facade {
 public:
     user_facade();
 
-//    pcap_t createSession(int snaplen, int promisc, int to_ms, char *ebuf);
+    pcap_t* createSession(int snaplen, int promisc, int to_ms);
 
     ~user_facade();
 
