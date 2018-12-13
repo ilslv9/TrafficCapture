@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/TraficAnalyzer.dir/main.cpp.o"
+  "CMakeFiles/TraficAnalyzer.dir/facades/user_facade.cpp.o"
   "TraficAnalyzer.pdb"
   "TraficAnalyzer"
 )

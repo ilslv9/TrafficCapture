@@ -84,6 +84,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/ilslv/proga/TrafficCapture/TraficAnalyzer/facades/user_facade.cpp">
+			<Option target="TraficAnalyzer"/>
+		</Unit>
 		<Unit filename="/home/ilslv/proga/TrafficCapture/TraficAnalyzer/facades/user_facade.h">
 			<Option target="TraficAnalyzer"/>
 		</Unit>

@@ -6,9 +6,23 @@
 
 #IncludeRegexTransform: 
 
+/home/ilslv/proga/TrafficCapture/TraficAnalyzer/facades/user_facade.cpp
+bits/functexcept.h
+-
+iostream
+-
+user_facade.h
+/home/ilslv/proga/TrafficCapture/TraficAnalyzer/facades/user_facade.h
+
+/home/ilslv/proga/TrafficCapture/TraficAnalyzer/facades/user_facade.h
+pcap.h
+-
+
 /home/ilslv/proga/TrafficCapture/TraficAnalyzer/main.cpp
 iostream
 -
 pcap.h
 /home/ilslv/proga/TrafficCapture/TraficAnalyzer/pcap.h
+facades/user_facade.h
+/home/ilslv/proga/TrafficCapture/TraficAnalyzer/facades/user_facade.h
 

@@ -123,6 +123,33 @@ TraficAnalyzer/fast:
 	$(MAKE) -f CMakeFiles/TraficAnalyzer.dir/build.make CMakeFiles/TraficAnalyzer.dir/build
 .PHONY : TraficAnalyzer/fast
 
+facades/user_facade.o: facades/user_facade.cpp.o
+
+.PHONY : facades/user_facade.o
+
+# target to build an object file
+facades/user_facade.cpp.o:
+	$(MAKE) -f CMakeFiles/TraficAnalyzer.dir/build.make CMakeFiles/TraficAnalyzer.dir/facades/user_facade.cpp.o
+.PHONY : facades/user_facade.cpp.o
+
+facades/user_facade.i: facades/user_facade.cpp.i
+
+.PHONY : facades/user_facade.i
+
+# target to preprocess a source file
+facades/user_facade.cpp.i:
+	$(MAKE) -f CMakeFiles/TraficAnalyzer.dir/build.make CMakeFiles/TraficAnalyzer.dir/facades/user_facade.cpp.i
+.PHONY : facades/user_facade.cpp.i
+
+facades/user_facade.s: facades/user_facade.cpp.s
+
+.PHONY : facades/user_facade.s
+
+# target to generate assembly for a file
+facades/user_facade.cpp.s:
+	$(MAKE) -f CMakeFiles/TraficAnalyzer.dir/build.make CMakeFiles/TraficAnalyzer.dir/facades/user_facade.cpp.s
+.PHONY : facades/user_facade.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... TraficAnalyzer"
 	@echo "... edit_cache"
+	@echo "... facades/user_facade.o"
+	@echo "... facades/user_facade.i"
+	@echo "... facades/user_facade.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
