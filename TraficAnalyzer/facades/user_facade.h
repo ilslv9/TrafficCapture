@@ -1,0 +1,8 @@
+//
+// Created by ilslv on 13.12.18.
+//
+
+#ifndef TRAFICANALYZER_USER_FACADE_H
+#define TRAFICANALYZER_USER_FACADE_H
+
+#endif //TRAFICANALYZER_USER_FACADE_H
