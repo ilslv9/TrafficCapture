@@ -4,5 +4,5 @@ project(TraficAnalyzer)
 set(CMAKE_CXX_STANDARD 14)
 include(FindPCAP.cmake)
 
-add_executable(TraficAnalyzer main.cpp facades/user_facade.cpp facades/user_facade.h)
+add_executable(TraficAnalyzer main.cpp user_facade.h)
 target_link_libraries(TraficAnalyzer ${PCAP_LIBRARY})
