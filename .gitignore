@@ -31,6 +31,10 @@
 *.out
 *.app
 
+/build
+/cmake-build-debug
+/.idea
+
 CMakeCache.txt
 CMakeFiles
 CMakeScripts

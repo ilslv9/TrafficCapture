@@ -1,3 +1,0 @@
-/home/ilslv/proga/TrafficCapture/TraficAnalyzer/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/ilslv/proga/TrafficCapture/TraficAnalyzer/cmake-build-debug/CMakeFiles/TraficAnalyzer.dir
-/home/ilslv/proga/TrafficCapture/TraficAnalyzer/cmake-build-debug/CMakeFiles/edit_cache.dir

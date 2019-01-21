@@ -1,10 +1,9 @@
-cmake_minimum_required(VERSION 3.13)
-project(TrafficCapture)
+cmake_minimum_required(VERSION 3.12)
+project(TraficAnalyzer)
 
 set(CMAKE_CXX_STANDARD 14)
 
-include_directories(TraficAnalyzer/facades)
+find_library(TINS_LIBRARY tins)
 
-add_executable(TrafficCapture
-        TraficAnalyzer/user_facade.h
-        TraficAnalyzer/main.cpp structures.h)
+add_executable(TraficAnalyzer main.cpp user_facade.h)
+target_link_libraries(TraficAnalyzer "${TINS_LIBRARY}")
