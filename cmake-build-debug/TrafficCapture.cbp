@@ -92,6 +92,9 @@
 		<Unit filename="/home/ilslv/proga/TrafficCapture/TraficAnalyzer/user_facade.h">
 			<Option target="TrafficCapture"/>
 		</Unit>
+		<Unit filename="/home/ilslv/proga/TrafficCapture/structures.h">
+			<Option target="TrafficCapture"/>
+		</Unit>
 		<Unit filename="/home/ilslv/proga/TrafficCapture/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

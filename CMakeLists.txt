@@ -7,4 +7,4 @@ include_directories(TraficAnalyzer/facades)
 
 add_executable(TrafficCapture
         TraficAnalyzer/user_facade.h
-        TraficAnalyzer/main.cpp)
+        TraficAnalyzer/main.cpp structures.h)
